@@ -1,0 +1,211 @@
+.board-card {
+  background: var(--white);
+  border: 1px solid rgba(184, 150, 46, 0.15);
+  padding: 36px;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.board-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--gold-dark), var(--gold), var(--gold-dark));
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: var(--transition-slow);
+}
+
+.board-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(184, 150, 46, 0.1);
+  border-color: rgba(184, 150, 46, 0.3);
+}
+
+.board-card:hover::before {
+  transform: scaleY(1);
+}
+
+/* Featured card (chair) */
+.board-card.featured {
+  flex-direction: row;
+  gap: 48px;
+  align-items: flex-start;
+  background: linear-gradient(135deg, var(--green-deep) 0%, #0a1a10 100%);
+  border-color: rgba(184, 150, 46, 0.3);
+}
+
+.board-card.featured::before {
+  background: linear-gradient(to bottom, var(--gold-light), var(--gold), var(--gold-light));
+  transform: scaleY(1);
+}
+
+.board-card.featured .member-name {
+  color: var(--white);
+}
+
+.board-card.featured .member-role {
+  color: var(--gold-light);
+}
+
+.board-card.featured .member-background {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.board-card.featured .member-description {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.board-card.featured .member-quote {
+  border-color: rgba(184, 150, 46, 0.25);
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.board-card.featured .quote-mark {
+  color: var(--gold);
+}
+
+/* Avatar */
+.member-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  flex-shrink: 0;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.board-card.featured .member-avatar {
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.avatar-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1px solid rgba(184, 150, 46, 0.4);
+}
+
+/* Featured left col */
+.board-card.featured .card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.featured-badge {
+  font-family: var(--font-ui);
+  font-size: 0.55rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid rgba(184, 150, 46, 0.3);
+  padding: 5px 12px;
+  white-space: nowrap;
+}
+
+.board-card.featured .card-right {
+  flex: 1;
+}
+
+/* Text */
+.member-name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--green-deep);
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.member-role {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  margin-bottom: 4px;
+}
+
+.member-background {
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 16px;
+}
+
+.member-description {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #555;
+  line-height: 1.75;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+/* Quote */
+.member-quote {
+  border-top: 1px solid rgba(184, 150, 46, 0.12);
+  padding-top: 20px;
+  position: relative;
+}
+
+.quote-mark {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  line-height: 0.8;
+  color: var(--gold-pale);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.quote-text {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .board-card.featured {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .board-card.featured .member-avatar {
+    width: 80px;
+    height: 80px;
+    font-size: 1.5rem;
+  }
+
+  .board-card.featured .card-left {
+    flex-direction: row;
+    align-items: center;
+  }
+}

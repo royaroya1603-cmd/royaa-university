@@ -1,0 +1,69 @@
+import React, { useState, useEffect } from 'react'
+import '../styles/Navbar.css'
+
+const navLinks = [
+  { label: 'About', href: '#about' },
+  { label: 'Programs', href: '#programs' },
+  { label: 'Collaboration', href: '#collaboration' },
+  { label: 'Board', href: '#board' },
+  { label: 'Contact', href: '#footer' },
+]
+
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 40)
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  return (
+    <>
+      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+        <div className="navbar-inner">
+          <a href="#hero" className="navbar-logo">
+            <div className="logo-emblem">R</div>
+            <div className="logo-text">
+              <span className="logo-name">Ro'ya University</span>
+              <span className="logo-tagline">For Science & Technology</span>
+            </div>
+          </a>
+
+          <ul className="navbar-links">
+            {navLinks.map(link => (
+              <li key={link.href}>
+                <a href={link.href}>{link.label}</a>
+              </li>
+            ))}
+          </ul>
+
+          <button className="navbar-cta">Apply Now</button>
+
+          <button
+            className="navbar-toggle"
+            onClick={() => setMobileOpen(prev => !prev)}
+            aria-label="Toggle menu"
+          >
+            <span style={{ transform: mobileOpen ? 'rotate(45deg) translate(4px, 4px)' : 'none' }} />
+            <span style={{ opacity: mobileOpen ? 0 : 1 }} />
+            <span style={{ transform: mobileOpen ? 'rotate(-45deg) translate(4px, -4px)' : 'none' }} />
+          </button>
+        </div>
+      </nav>
+
+      <div className={`navbar-mobile ${mobileOpen ? 'open' : ''}`}>
+        <ul>
+          {navLinks.map(link => (
+            <li key={link.href}>
+              <a href={link.href} onClick={() => setMobileOpen(false)}>
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
+  )
+}
