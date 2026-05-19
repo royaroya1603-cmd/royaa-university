@@ -43,6 +43,12 @@
   margin: 16px auto 0;
 }
 
+.collab-banners {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
 /* Main banner */
 .collab-banner {
   background:
@@ -54,6 +60,8 @@
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 0;
+  border: 1px solid rgba(181, 135, 45, 0.18);
+  box-shadow: 0 18px 50px rgba(6, 23, 18, 0.16);
 }
 
 /* Egyptian border pattern */
@@ -218,23 +226,53 @@
   color: rgba(255, 255, 255, 0.75);
 }
 
-/* USM right side */
-.usm-logo-placeholder {
-  width: 100px;
-  height: 100px;
-  border: 1px solid rgba(184, 150, 46, 0.2);
-  background: rgba(255, 255, 255, 0.04);
+.partner-logo-box {
+  width: 112px;
+  height: 112px;
+  border: 1px solid rgba(215, 174, 85, 0.35);
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 4px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
   font-family: var(--font-ui);
-  font-size: 0.7rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 800;
   letter-spacing: 0.08em;
-  color: var(--gold-light);
+  color: var(--green-deep);
   text-align: center;
   line-height: 1.4;
+}
+
+.partner-logo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.collab-highlight {
+  margin-top: 16px;
+  padding: 8px 14px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: var(--obsidian);
+  font-family: var(--font-ui);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  max-width: 330px;
+}
+
+.collab-description {
+  max-width: 380px;
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.88);
+  font-family: var(--font-body);
+  font-size: 0.96rem;
+  font-weight: 300;
+  line-height: 1.65;
 }
 
 /* Benefits row below banner */
@@ -305,6 +343,11 @@
     padding: 24px 32px;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .collab-description {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .collab-center::before,

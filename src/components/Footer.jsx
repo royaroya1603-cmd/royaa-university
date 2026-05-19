@@ -82,7 +82,7 @@ export default function Footer() {
           </div>
           <div className="contact-item">
             <span className="contact-icon">Tel</span>
-            <span className="contact-text">+20 (2) 0000 0000</span>
+            <span className="contact-text">+20 1055552625</span>
           </div>
           <div className="contact-item">
             <span className="contact-icon">Web</span>
