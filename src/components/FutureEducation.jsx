@@ -25,11 +25,11 @@ const stats = [
 ]
 
 const timeline = [
-  { year: '2024 - Foundation', title: 'University Established', desc: 'Official founding of Ro\'ya University with its Board of Trustees.' },
-  { year: '2024 - Partnership', title: 'MOU with USM', desc: 'Landmark agreement with Universiti Sains Malaysia signed.' },
-  { year: '2025 - Launch', title: 'First Academic Year', desc: 'Six faculties open their doors to Egypt\'s next generation of scholars.' },
-  { year: '2026 - Growth', title: 'Hospital Inauguration', desc: 'University Teaching Hospital begins serving the community.' },
-  { year: '2030 - Vision', title: 'Regional Leadership', desc: 'Ro\'ya recognized as a premier research university in the Arab world.' },
+  { year: 'Mission', title: 'Purpose-Led Learning', desc: 'Deliver education that forms capable graduates with strong ethics, practical skill, and pride in Egypt\'s civilizational legacy.' },
+  { year: 'Vision', title: 'A Regional Academic Beacon', desc: 'Build a university recognized for scientific excellence, cultural identity, and meaningful contribution to society.' },
+  { year: 'Identity', title: 'Rooted in Heritage', desc: 'Let the Pharaonic spirit of invention, precision, and permanence guide the university\'s academic and visual character.' },
+  { year: 'Innovation', title: 'Future-Ready Disciplines', desc: 'Connect medicine, engineering, AI, healthcare, and research through programs designed for the needs of tomorrow.' },
+  { year: 'Impact', title: 'Service Beyond Campus', desc: 'Grow a community of scholars and professionals whose work improves lives across Egypt and the wider region.' },
 ]
 
 export default function FutureEducation() {

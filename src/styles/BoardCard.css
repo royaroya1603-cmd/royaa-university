@@ -37,8 +37,11 @@
   flex-direction: row;
   gap: 48px;
   align-items: flex-start;
-  background: linear-gradient(135deg, var(--green-deep) 0%, var(--turquoise) 56%, #061712 100%);
-  border-color: rgba(184, 150, 46, 0.3);
+  background:
+    linear-gradient(135deg, rgba(6, 23, 18, 0.96) 0%, rgba(6, 71, 55, 0.96) 54%, rgba(6, 23, 18, 0.98) 100%),
+    var(--green-deep);
+  border-color: rgba(215, 174, 85, 0.5);
+  box-shadow: 0 22px 58px rgba(6, 23, 18, 0.28);
 }
 
 .board-card.featured::before {
@@ -48,28 +51,38 @@
 
 .board-card.featured .member-name {
   color: var(--white);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
 }
 
 .board-card.featured .member-role {
-  color: var(--gold-light);
+  color: #f0d27b;
+  font-weight: 800;
 }
 
 .board-card.featured .member-background {
-  color: rgba(255, 255, 255, 0.74);
-}
-
-.board-card.featured .member-description {
   color: rgba(255, 255, 255, 0.88);
 }
 
+.board-card.featured .member-description {
+  color: rgba(255, 255, 255, 0.94);
+  font-weight: 400;
+}
+
 .board-card.featured .member-quote {
-  border-color: rgba(184, 150, 46, 0.25);
-  color: rgba(255, 255, 255, 0.8);
-  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(215, 174, 85, 0.38);
+  color: rgba(255, 255, 255, 0.96);
+  background: rgba(2, 12, 9, 0.38);
+  padding: 22px 24px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .board-card.featured .quote-mark {
-  color: var(--gold);
+  color: #f0d27b;
+}
+
+.board-card.featured .quote-text {
+  color: rgba(255, 255, 255, 0.96);
+  font-weight: 500;
 }
 
 /* Avatar */
@@ -118,8 +131,9 @@
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--gold);
-  border: 1px solid rgba(184, 150, 46, 0.3);
+  color: var(--obsidian);
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  border: 1px solid rgba(255, 255, 255, 0.28);
   padding: 5px 12px;
   white-space: nowrap;
 }
