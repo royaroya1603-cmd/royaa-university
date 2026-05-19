@@ -398,9 +398,15 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    min-height: 112vh;
+    align-items: flex-start;
+  }
+
   .hero-content {
     padding: 0 20px;
     padding-top: 120px;
+    padding-bottom: 190px;
   }
 
   .hero-stats-inner {
@@ -427,7 +433,52 @@
 }
 
 @media (max-width: 480px) {
+  .hero {
+    min-height: 118vh;
+  }
+
+  .hero-content {
+    padding-top: 104px;
+    padding-bottom: 205px;
+  }
+
+  .hero-brand-mark {
+    width: 104px;
+    margin-bottom: 20px;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.58rem;
+    letter-spacing: 0.22em;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .eyebrow-line {
+    width: 30px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.02rem;
+    line-height: 1.5;
+    margin-bottom: 28px;
+  }
+
   .hero-stats-inner {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-stat {
+    padding: 18px 6px;
+  }
+
+  .stat-number {
+    font-size: 1.55rem;
+  }
+
+  .stat-label {
+    font-size: 0.52rem;
+    letter-spacing: 0.14em;
+    line-height: 1.35;
   }
 }
