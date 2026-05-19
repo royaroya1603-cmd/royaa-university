@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import '../styles/About.css'
+import aboutVideo from '../assets/about_roya_video.mp4'
 
 const pillars = [
-  { icon: '🏛️', title: 'Academic Excellence', desc: 'Curricula designed by world-class faculty and international partners.' },
-  { icon: '🔬', title: 'Research & Innovation', desc: 'State-of-the-art labs and research centers driving discovery.' },
-  { icon: '🌍', title: 'Global Perspective', desc: 'International partnerships that prepare graduates for a connected world.' },
+  { icon: 'AE', title: 'Academic Excellence', desc: 'Curricula designed by world-class faculty and international partners.' },
+  { icon: 'RI', title: 'Research & Innovation', desc: 'State-of-the-art labs and research centers driving discovery.' },
+  { icon: 'GP', title: 'Global Perspective', desc: 'International partnerships that prepare graduates for a connected world.' },
 ]
 
 export default function About() {
@@ -13,7 +14,6 @@ export default function About() {
   return (
     <section className="about" id="about">
       <div className="about-inner">
-        {/* Text */}
         <div className="about-text">
           <div className="section-label">About Ro'ya University</div>
           <h2 className="section-title">
@@ -21,7 +21,7 @@ export default function About() {
           </h2>
 
           <div className="egyptian-divider">
-            <span>◆</span>
+            <span>RU</span>
           </div>
 
           <p className="about-body">
@@ -33,7 +33,7 @@ export default function About() {
           </p>
           <p className="about-body">
             Rooted in Egypt's extraordinary legacy of civilization and scholarship, Ro'ya draws
-            inspiration from millennia of human achievement — while pioneering the educational
+            inspiration from millennia of human achievement while pioneering the educational
             models that will carry our region into a prosperous future.
           </p>
 
@@ -50,19 +50,12 @@ export default function About() {
           </div>
         </div>
 
-        {/* Video card */}
         <div className="about-video-area">
           <div className="video-card" onClick={() => setModalOpen(true)}>
-            {/* Placeholder thumbnail */}
-            <div className="video-thumb-placeholder">
-              <div className="thumb-pattern" />
-              <div className="thumb-content">
-                <span className="thumb-logo-text">Ro'ya</span>
-                <span className="thumb-sub">University · For Science & Technology</span>
-              </div>
-            </div>
+            <video className="video-thumbnail" muted playsInline preload="metadata">
+              <source src={aboutVideo} type="video/mp4" />
+            </video>
 
-            {/* Play button overlay */}
             <div className="video-play-btn">
               <div className="play-ring">
                 <div className="play-triangle" />
@@ -80,16 +73,16 @@ export default function About() {
         </div>
       </div>
 
-      {/* Video Modal */}
       {modalOpen && (
         <div className="video-modal-overlay" onClick={() => setModalOpen(false)}>
           <div className="video-modal" onClick={e => e.stopPropagation()}>
             <button className="video-modal-close" onClick={() => setModalOpen(false)}>
-              ✕ &nbsp; Close
+              x Close
             </button>
             <div className="video-embed">
-              {/* Replace src with actual video embed URL */}
-              <p>[ University Story Video — Placeholder ]</p>
+              <video className="video-player" controls autoPlay playsInline>
+                <source src={aboutVideo} type="video/mp4" />
+              </video>
             </div>
           </div>
         </div>

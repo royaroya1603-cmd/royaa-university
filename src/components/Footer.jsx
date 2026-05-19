@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Footer.css'
+import royaLogo from '../assets/roya-logo.jpg'
 
 const quickLinks = [
   { label: 'About the University', href: '#about' },
@@ -23,14 +24,15 @@ export default function Footer() {
   return (
     <footer className="footer" id="footer">
       <div className="footer-ornament">
-        <span>◆ ◇ ◆ ◇ ◆ ◇ ◆</span>
+        <span>RO'YA UNIVERSITY</span>
       </div>
 
       <div className="footer-main">
-        {/* Brand */}
         <div className="footer-brand">
           <div className="footer-logo">
-            <div className="footer-logo-hex">R</div>
+            <div className="footer-logo-hex">
+              <img src={royaLogo} alt="Ro'ya University logo" />
+            </div>
             <div className="footer-logo-words">
               <span className="footer-logo-name">Ro'ya University</span>
               <span className="footer-logo-sub">For Science & Technology</span>
@@ -43,14 +45,13 @@ export default function Footer() {
           </p>
           <div className="footer-socials">
             <div className="social-icon" title="Facebook">f</div>
-            <div className="social-icon" title="Twitter/X">𝕏</div>
-            <div className="social-icon" title="Instagram">◎</div>
+            <div className="social-icon" title="Twitter/X">X</div>
+            <div className="social-icon" title="Instagram">IG</div>
             <div className="social-icon" title="LinkedIn">in</div>
-            <div className="social-icon" title="YouTube">▶</div>
+            <div className="social-icon" title="YouTube">YT</div>
           </div>
         </div>
 
-        {/* Quick links */}
         <div className="footer-col">
           <div className="footer-col-title">Quick Links</div>
           <ul className="footer-links">
@@ -60,7 +61,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Programs */}
         <div className="footer-col">
           <div className="footer-col-title">Programs</div>
           <ul className="footer-links">
@@ -70,23 +70,22 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Contact */}
         <div className="footer-col">
           <div className="footer-col-title">Contact Us</div>
           <div className="contact-item">
-            <span className="contact-icon">📍</span>
+            <span className="contact-icon">Map</span>
             <span className="contact-text">Ro'ya University Campus<br />New Administrative Capital<br />Cairo, Egypt</span>
           </div>
           <div className="contact-item">
-            <span className="contact-icon">✉️</span>
+            <span className="contact-icon">Mail</span>
             <span className="contact-text">info@roya.edu.eg</span>
           </div>
           <div className="contact-item">
-            <span className="contact-icon">📞</span>
+            <span className="contact-icon">Tel</span>
             <span className="contact-text">+20 (2) 0000 0000</span>
           </div>
           <div className="contact-item">
-            <span className="contact-icon">🌐</span>
+            <span className="contact-icon">Web</span>
             <span className="contact-text">www.roya.edu.eg</span>
           </div>
         </div>
@@ -95,7 +94,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="footer-bottom-inner">
           <p className="footer-copyright">
-            © {new Date().getFullYear()} Ro'ya University for Science & Technology. All rights reserved.
+            Copyright {new Date().getFullYear()} Ro'ya University for Science & Technology. All rights reserved.
           </p>
           <div className="footer-bottom-links">
             <a href="#">Privacy Policy</a>

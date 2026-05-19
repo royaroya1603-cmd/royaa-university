@@ -1,6 +1,8 @@
 .programs {
   padding: var(--section-padding);
-  background: var(--green-deep);
+  background:
+    linear-gradient(135deg, rgba(0, 140, 140, 0.14), transparent 44%),
+    linear-gradient(180deg, var(--emerald-dark), #062c23);
   position: relative;
   overflow: hidden;
 }
@@ -67,7 +69,7 @@
 }
 
 .programs-header .section-subtitle {
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.88);
   margin: 0 auto;
   margin-top: 16px;
 }

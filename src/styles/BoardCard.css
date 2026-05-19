@@ -1,6 +1,6 @@
 .board-card {
-  background: var(--white);
-  border: 1px solid rgba(184, 150, 46, 0.15);
+  background: #fffaf0;
+  border: 1px solid rgba(181, 135, 45, 0.26);
   padding: 36px;
   position: relative;
   overflow: hidden;
@@ -37,7 +37,7 @@
   flex-direction: row;
   gap: 48px;
   align-items: flex-start;
-  background: linear-gradient(135deg, var(--green-deep) 0%, #0a1a10 100%);
+  background: linear-gradient(135deg, var(--green-deep) 0%, var(--turquoise) 56%, #061712 100%);
   border-color: rgba(184, 150, 46, 0.3);
 }
 
@@ -55,11 +55,11 @@
 }
 
 .board-card.featured .member-background {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.74);
 }
 
 .board-card.featured .member-description {
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .board-card.featured .member-quote {
@@ -161,7 +161,7 @@
   font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 300;
-  color: #555;
+  color: var(--text-secondary);
   line-height: 1.75;
   flex: 1;
   margin-bottom: 20px;
@@ -188,7 +188,7 @@
   font-size: 0.95rem;
   font-style: italic;
   font-weight: 400;
-  color: #444;
+  color: var(--text-primary);
   line-height: 1.7;
 }
 

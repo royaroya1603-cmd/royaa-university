@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/Navbar.css'
+import royaLogo from '../assets/roya-logo.jpg'
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -24,7 +25,9 @@ export default function Navbar() {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="navbar-inner">
           <a href="#hero" className="navbar-logo">
-            <div className="logo-emblem">R</div>
+            <div className="logo-emblem">
+              <img src={royaLogo} alt="Ro'ya University logo" />
+            </div>
             <div className="logo-text">
               <span className="logo-name">Ro'ya University</span>
               <span className="logo-tagline">For Science & Technology</span>

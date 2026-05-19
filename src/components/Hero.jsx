@@ -1,14 +1,15 @@
 import React from 'react'
 import '../styles/Hero.css'
+import royaLogo from '../assets/roya-logo.jpg'
 
 export default function Hero() {
   return (
     <section className="hero" id="hero">
-      {/* Layered background */}
       <div className="hero-bg">
         <div className="hero-gradient" />
         <div className="hero-rays" />
         <div className="hero-pattern" />
+        <div className="hero-cartouche" />
         <div className="hero-geo-border" />
         <div className="hero-columns">
           <div className="column-left" />
@@ -16,11 +17,14 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Main content */}
       <div className="hero-content">
+        <div className="hero-brand-mark">
+          <img src={royaLogo} alt="Ro'ya University logo" />
+        </div>
+
         <div className="hero-eyebrow">
           <span className="eyebrow-line" />
-          <span>Est. 2024 · Egypt · For Science & Technology</span>
+          <span>Est. 2024 - Egypt - For Science & Technology</span>
         </div>
 
         <h1 className="hero-title">
@@ -30,7 +34,7 @@ export default function Hero() {
         </h1>
 
         <p className="hero-subtitle">
-          Ro'ya University stands at the crossroads of ancient wisdom and modern innovation —
+          Ro'ya University stands at the crossroads of ancient wisdom and modern innovation,
           cultivating scholars, healers, and engineers who will define the next era of
           Egyptian and regional excellence.
         </p>
@@ -38,13 +42,12 @@ export default function Hero() {
         <div className="hero-cta-group">
           <a href="#programs" className="btn-gold">Explore Programs</a>
           <a href="#about" className="hero-watch-btn">
-            <span className="play-circle">▶</span>
+            <span className="play-circle">Play</span>
             Watch Our Story
           </a>
         </div>
       </div>
 
-      {/* Stats bar */}
       <div className="hero-stats">
         <div className="hero-stats-inner">
           <div className="hero-stat">
@@ -66,7 +69,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
       <div className="hero-scroll">
         <div className="scroll-line" />
         <span>Scroll</span>

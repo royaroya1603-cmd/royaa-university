@@ -1,6 +1,8 @@
 .future-ed {
   padding: var(--section-padding);
-  background: var(--black-soft);
+  background:
+    radial-gradient(ellipse at 75% 20%, rgba(0, 140, 140, 0.2), transparent 34%),
+    var(--black-soft);
   position: relative;
   overflow: hidden;
 }
@@ -51,7 +53,7 @@
 }
 
 .future-header .section-subtitle {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.86);
   margin: 16px auto 0;
 }
 
@@ -66,7 +68,7 @@
 }
 
 .future-stat-card {
-  background: rgba(255, 255, 255, 0.025);
+  background: rgba(255, 255, 255, 0.08);
   padding: 44px 28px;
   text-align: center;
   position: relative;
@@ -96,7 +98,9 @@
 }
 
 .stat-icon-large {
-  font-size: 2.4rem;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--turquoise-light);
   display: block;
   margin-bottom: 16px;
   animation: float 4s ease-in-out infinite;
@@ -120,7 +124,7 @@
   font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.82);
   line-height: 1.6;
 }
 
@@ -152,7 +156,7 @@
   font-family: var(--font-body);
   font-size: 1.05rem;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.84);
   line-height: 1.85;
   margin-bottom: 16px;
 }
@@ -217,7 +221,7 @@
   font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.78);
 }
 
 @media (max-width: 1024px) {

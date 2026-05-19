@@ -1,6 +1,6 @@
 .about {
   padding: var(--section-padding);
-  background: var(--off-white);
+  background: linear-gradient(180deg, var(--cream), #fffaf0);
   position: relative;
   overflow: hidden;
 }
@@ -38,14 +38,14 @@
   font-family: var(--font-body);
   font-size: 1.1rem;
   font-weight: 300;
-  color: #2f2f2f;
+  color: var(--text-secondary);
   line-height: 1.9;
   margin-bottom: 20px;
 }
 
 .about-body strong {
   color: var(--green-deep);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .about-pillars {
@@ -64,11 +64,15 @@
 .pillar-icon {
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, var(--green-deep), var(--green-mid));
+  background: linear-gradient(135deg, var(--green-deep), var(--turquoise));
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-family: var(--font-ui);
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #fff;
   flex-shrink: 0;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
@@ -86,7 +90,7 @@
 .pillar-content p {
   font-family: var(--font-body);
   font-size: 0.95rem;
-  color: #515151;
+  color: var(--text-secondary);
   font-weight: 300;
 }
 
@@ -115,12 +119,12 @@
   aspect-ratio: 16/9;
   object-fit: cover;
   display: block;
-  filter: brightness(0.6);
+  filter: brightness(0.72) saturate(1.05);
   transition: var(--transition);
 }
 
 .video-card:hover .video-thumbnail {
-  filter: brightness(0.5);
+  filter: brightness(0.58) saturate(1.12);
   transform: scale(1.04);
 }
 
@@ -128,7 +132,7 @@
 .video-thumb-placeholder {
   width: 100%;
   aspect-ratio: 16/9;
-  background: linear-gradient(135deg, #0a1a10 0%, #1A4A2E 40%, #0D2A1A 70%, #0a1a10 100%);
+  background: linear-gradient(135deg, #063a2e 0%, #0b7f69 42%, #008c8c 72%, #061712 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,16 +157,19 @@
   position: relative;
   z-index: 1;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.thumb-logo-text {
-  font-family: var(--font-display);
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(184, 150, 46, 0.4);
-  display: block;
-  margin-bottom: 8px;
+.thumb-logo-img {
+  width: min(220px, 70%);
+  background: #fff;
+  border: 2px solid var(--gold-light);
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 14px;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.28);
 }
 
 .thumb-sub {
@@ -170,7 +177,7 @@
   font-size: 0.65rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.92);
 }
 
 /* Play button */
@@ -228,7 +235,8 @@
   font-size: 0.65rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
 }
 
 /* Gold corner accent */
@@ -257,7 +265,7 @@
   font-family: var(--font-body);
   font-size: 0.95rem;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.88);
   font-weight: 300;
 }
 
@@ -319,10 +327,14 @@
   align-items: center;
   justify-content: center;
   background: #111;
-  font-family: var(--font-body);
-  font-size: 1.2rem;
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.4);
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  background: #000;
 }
 
 /* Gold accent line beside text */
