@@ -246,3 +246,51 @@ button {
   from { width: 0; }
   to { width: 100%; }
 }
+
+@media (max-width: 768px) {
+  :root {
+    --section-pad: 4.5rem 1rem;
+    --container-pad: 0;
+  }
+
+  html {
+    font-size: 15px;
+  }
+
+  .section-label {
+    font-size: 0.62rem;
+    letter-spacing: 0.22em;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.9rem, 9vw, 2.55rem);
+    line-height: 1.12;
+    margin-bottom: 1rem;
+  }
+
+  .section-title br {
+    display: none;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: 2.25rem;
+  }
+
+  .egyptian-divider {
+    margin: 0.95rem 0 1.35rem;
+  }
+
+  .egyptian-divider::before,
+  .egyptian-divider::after {
+    width: min(68px, 22vw);
+  }
+}
+
+@media (max-width: 420px) {
+  .section-title {
+    font-size: clamp(1.75rem, 10vw, 2.25rem);
+  }
+}

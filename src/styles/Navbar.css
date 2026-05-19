@@ -149,6 +149,7 @@
   gap: 5px;
   cursor: pointer;
   padding: 4px;
+  background: transparent;
 }
 
 .navbar-toggle span {
@@ -203,6 +204,15 @@
 }
 
 @media (max-width: 900px) {
+  .navbar,
+  .navbar.scrolled {
+    height: 76px;
+    padding: 0 24px;
+    background: rgba(6, 23, 18, 0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(215, 174, 85, 0.24);
+  }
+
   .navbar-links,
   .navbar-cta {
     display: none;
@@ -210,24 +220,75 @@
 
   .navbar-toggle {
     display: flex;
+    min-width: 42px;
+    min-height: 42px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(215, 174, 85, 0.28);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .navbar-mobile {
+    top: 76px;
+    left: 12px;
+    right: 12px;
+    padding: 10px 18px 14px;
+    border: 1px solid rgba(184, 150, 46, 0.22);
+    border-top: none;
+    box-shadow: 0 18px 44px rgba(6, 23, 18, 0.34);
+  }
+
+  .navbar-mobile ul {
+    gap: 0;
+  }
+
+  .navbar-mobile a {
+    padding: 15px 0;
+    font-size: 0.78rem;
+    letter-spacing: 0.13em;
   }
 }
 
 @media (max-width: 480px) {
-  .navbar {
-    padding: 0 20px;
+  .navbar,
+  .navbar.scrolled {
+    height: 72px;
+    padding: 0 16px;
   }
 
   .logo-emblem {
-    width: 58px;
-    height: 58px;
+    width: 50px;
+    height: 50px;
   }
 
   .logo-name {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .logo-tagline {
-    font-size: 0.5rem;
+    font-size: 0.46rem;
+    letter-spacing: 0.15em;
+  }
+
+  .navbar-logo {
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .logo-text {
+    min-width: 0;
+  }
+
+  .navbar-mobile {
+    top: 72px;
+    left: 8px;
+    right: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo-tagline {
+    display: none;
   }
 }

@@ -40,7 +40,6 @@ export default function Hero() {
         </p>
 
         <div className="hero-cta-group">
-          <a href="#programs" className="btn-gold">Explore Programs</a>
           <a href="#about" className="hero-watch-btn">
             <span className="play-circle">Play</span>
             Watch Our Story

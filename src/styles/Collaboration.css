@@ -361,11 +361,140 @@
 }
 
 @media (max-width: 640px) {
+  .collab-header {
+    text-align: left;
+    margin-bottom: 34px;
+  }
+
+  .collab-header .section-label {
+    justify-content: flex-start;
+  }
+
+  .collab-header .section-subtitle {
+    margin: 12px 0 0;
+  }
+
+  .collab-banners {
+    gap: 18px;
+  }
+
+  .collab-banner {
+    border-radius: 4px;
+  }
+
+  .collab-side {
+    padding: 28px 18px;
+  }
+
+  .collab-side:first-of-type {
+    padding-bottom: 18px;
+  }
+
+  .collab-logo-box {
+    width: 94px;
+    height: 94px;
+    margin-bottom: 14px;
+  }
+
+  .partner-logo-box {
+    width: 88px;
+    height: 88px;
+    margin-bottom: 14px;
+  }
+
+  .collab-uni-name {
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+
+  .collab-uni-tagline,
+  .collab-country {
+    letter-spacing: 0.13em;
+  }
+
+  .collab-center {
+    padding: 0 18px;
+    gap: 12px;
+  }
+
+  .collab-center::before,
+  .collab-center::after {
+    display: block;
+    top: 50%;
+    bottom: auto;
+    width: calc(50% - 58px);
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(184, 150, 46, 0.34));
+  }
+
+  .collab-center::before {
+    left: 18px;
+  }
+
+  .collab-center::after {
+    right: 18px;
+    background: linear-gradient(90deg, rgba(184, 150, 46, 0.34), transparent);
+  }
+
+  .mou-badge {
+    width: 66px;
+    height: 66px;
+    background: rgba(6, 23, 18, 0.72);
+  }
+
+  .mou-badge span:first-child {
+    font-size: 0.78rem;
+  }
+
+  .mou-badge span:last-child {
+    font-size: 0.46rem;
+  }
+
+  .collab-x {
+    display: none;
+  }
+
+  .collab-highlight {
+    max-width: 100%;
+    margin-top: 12px;
+    padding: 8px 10px;
+    font-size: 0.58rem;
+    line-height: 1.45;
+    letter-spacing: 0.08em;
+    text-align: center;
+  }
+
+  .collab-description {
+    font-size: 0.94rem;
+    line-height: 1.5;
+    margin-top: 12px;
+  }
+
   .collab-benefits {
     grid-template-columns: 1fr;
+    margin-top: 30px;
   }
 
   .collab-inner {
-    padding: 0 20px;
+    padding: 0;
+  }
+
+  .benefit-item {
+    padding: 24px 18px;
+  }
+}
+
+@media (max-width: 380px) {
+  .collab-side {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .collab-uni-tagline {
+    font-size: 0.55rem;
+  }
+
+  .collab-highlight {
+    font-size: 0.54rem;
   }
 }

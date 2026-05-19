@@ -361,6 +361,99 @@
 
 @media (max-width: 768px) {
   .about-inner {
-    padding: 0 20px;
+    padding: 0;
+    gap: 36px;
+    align-items: stretch;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+
+  .about-text .egyptian-divider {
+    justify-content: flex-start;
+  }
+
+  .about-body {
+    font-size: 1.03rem;
+    line-height: 1.65;
+    margin-bottom: 16px;
+  }
+
+  .about-pillars {
+    gap: 12px;
+    margin-top: 26px;
+  }
+
+  .pillar {
+    gap: 12px;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.56);
+    border: 1px solid rgba(181, 135, 45, 0.12);
+  }
+
+  .pillar-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 0.56rem;
+  }
+
+  .pillar-content h4 {
+    font-size: 0.68rem;
+    letter-spacing: 0.11em;
+    margin-bottom: 2px;
+  }
+
+  .pillar-content p {
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  .about-video-area {
+    max-width: none;
+  }
+
+  .video-caption {
+    padding: 16px;
+    align-items: flex-start;
+  }
+
+  .video-caption-text {
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  .play-ring {
+    width: 62px;
+    height: 62px;
+  }
+
+  .play-ring::after {
+    width: 48px;
+    height: 48px;
+  }
+
+  .video-play-label {
+    font-size: 0.56rem;
+    letter-spacing: 0.2em;
+  }
+
+  .video-modal-overlay {
+    padding: 18px;
+  }
+
+  .video-modal-close {
+    top: -40px;
+    right: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .about-body {
+    font-size: 1rem;
+  }
+
+  .pillar {
+    padding: 12px;
   }
 }
