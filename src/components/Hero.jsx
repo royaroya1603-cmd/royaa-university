@@ -39,12 +39,7 @@ export default function Hero() {
           Egyptian and regional excellence.
         </p>
 
-        <div className="hero-cta-group">
-          <a href="#about" className="hero-watch-btn">
-            <span className="play-circle">Play</span>
-            Watch Our Story
-          </a>
-        </div>
+   
       </div>
 
       <div className="hero-stats">
