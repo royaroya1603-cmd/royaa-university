@@ -120,6 +120,9 @@
 
 /* CTA */
 .navbar-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-ui);
   font-size: 0.68rem;
   font-weight: 600;

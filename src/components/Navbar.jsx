@@ -10,6 +10,8 @@ const navLinks = [
   { label: 'Contact', href: '#footer' },
 ]
 
+const contactMailto = 'mailto:info@roya-university.com?subject=Ro%27ya%20University%20Inquiry'
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -42,7 +44,9 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <button className="navbar-cta">Apply Now</button>
+          <a className="navbar-cta" href={contactMailto}>
+            Contact Us Now
+          </a>
 
           <button
             className="navbar-toggle"
@@ -65,6 +69,11 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+          <li>
+            <a href={contactMailto} onClick={() => setMobileOpen(false)}>
+              Contact Us Now
+            </a>
+          </li>
         </ul>
       </div>
     </>
