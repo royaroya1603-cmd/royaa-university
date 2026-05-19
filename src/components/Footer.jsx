@@ -78,7 +78,7 @@ export default function Footer() {
           </div>
           <div className="contact-item">
             <span className="contact-icon">Mail</span>
-            <span className="contact-text">info@roya.edu.eg</span>
+            <span className="contact-text">info@roya-university.com</span>
           </div>
           <div className="contact-item">
             <span className="contact-icon">Tel</span>
@@ -86,7 +86,7 @@ export default function Footer() {
           </div>
           <div className="contact-item">
             <span className="contact-icon">Web</span>
-            <span className="contact-text">www.roya.edu.eg</span>
+            <span className="contact-text">www.roya-university.com</span>
           </div>
         </div>
       </div>
