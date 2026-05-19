@@ -74,7 +74,7 @@ export default function Footer() {
           <div className="footer-col-title">Contact Us</div>
           <div className="contact-item">
             <span className="contact-icon">Map</span>
-            <span className="contact-text">Ro'ya University Campus<br />New Administrative Capital<br />Cairo, Egypt</span>
+            <span className="contact-text">Ro'ya University Campus<br />Beni Suef <br />Cairo, Egypt</span>
           </div>
           <div className="contact-item">
             <span className="contact-icon">Mail</span>
