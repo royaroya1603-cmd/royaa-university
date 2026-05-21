@@ -2,7 +2,7 @@
   "name": "roya-university-website",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://royaroya1603-cmd.github.io/royaa-university/",
+  "homepage": "https://roya-university.com/",
   "type": "module",
   "scripts": {
     "dev": "vite",
