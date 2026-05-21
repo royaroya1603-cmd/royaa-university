@@ -47,7 +47,7 @@ export default function Navbar() {
           </ul>
 
           <a className="navbar-cta" href={contactMailto}>
-            Contact Us Now
+            Inquire Now
           </a>
 
           <button
