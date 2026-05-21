@@ -46,17 +46,6 @@ export default function CampusPreview() {
               <strong>Campus Perspective</strong>
             </div>
           </div>
-
-          <div className="campus-cascade" aria-hidden="true">
-            {campusImages.map((image, index) => (
-              <img
-                src={image.src}
-                alt=""
-                className={`cascade-image cascade-image-${index + 1}`}
-                key={image.src}
-              />
-            ))}
-          </div>
         </div>
 
         <div className="campus-thumbs" aria-label="Select campus image">

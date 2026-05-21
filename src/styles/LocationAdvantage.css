@@ -65,7 +65,8 @@
 
 .location-map-panel {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  margin-bottom: 88px;
   background:
     radial-gradient(circle at 50% 45%, rgba(215, 174, 85, 0.18), transparent 30%),
     linear-gradient(135deg, rgba(6, 71, 55, 0.96), rgba(8, 32, 25, 0.98));
@@ -186,15 +187,18 @@
 .map-distance {
   position: absolute;
   left: 36px;
-  right: 36px;
-  bottom: 34px;
+  right: auto;
+  bottom: -70px;
+  width: min(390px, calc(100% - 72px));
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   gap: 18px;
-  align-items: center;
+  align-items: flex-start;
   padding: 18px 22px;
   background: rgba(6, 23, 18, 0.72);
   border: 1px solid rgba(215, 174, 85, 0.22);
+  box-shadow: 0 18px 38px rgba(6, 23, 18, 0.18);
 }
 
 .map-distance span,
@@ -213,7 +217,7 @@
 .map-distance strong {
   font-size: 0.68rem;
   color: rgba(255, 255, 255, 0.88);
-  text-align: right;
+  text-align: left;
 }
 
 .location-content-panel {
@@ -467,6 +471,7 @@
 
   .location-map-panel {
     min-height: 470px;
+    margin-bottom: 90px;
   }
 
   .location-content-panel {
@@ -475,8 +480,9 @@
 
   .map-distance {
     left: 16px;
-    right: 16px;
-    bottom: 16px;
+    right: auto;
+    bottom: -74px;
+    width: min(330px, calc(100% - 32px));
     flex-direction: column;
     align-items: flex-start;
     padding: 14px;
