@@ -431,9 +431,9 @@
   }
 
   .hero-campus-image {
-    object-fit: contain;
     object-position: center top;
-    background: linear-gradient(160deg, #063a2e 0%, #061712 52%, #09271f 100%);
+    opacity: 0.8;
+    filter: saturate(0.9) contrast(1.02) brightness(1.02);
     transform: none;
   }
 
