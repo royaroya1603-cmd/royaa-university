@@ -426,12 +426,12 @@
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 112vh;
+    min-height: 100svh;
     align-items: flex-start;
   }
 
   .hero-campus-image {
-    object-position: center top;
+    object-position: center;
     opacity: 0.8;
     filter: saturate(0.9) contrast(1.02) brightness(1.02);
     transform: none;
@@ -468,7 +468,7 @@
 
 @media (max-width: 480px) {
   .hero {
-    min-height: 118vh;
+    min-height: 104svh;
   }
 
   .hero-content {
