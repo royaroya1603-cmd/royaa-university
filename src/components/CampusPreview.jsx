@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/CampusPreview.css'
 import campus1 from '../assets/campus1.png'
 import campus2 from '../assets/campus2.png'
@@ -22,6 +22,14 @@ export default function CampusPreview() {
   const [selectedIndex, setSelectedIndex] = useState(0)
   const selectedImage = campusImages[selectedIndex]
 
+  useEffect(() => {
+    const slideTimer = window.setInterval(() => {
+      setSelectedIndex(currentIndex => (currentIndex + 1) % campusImages.length)
+    }, 2500)
+
+    return () => window.clearInterval(slideTimer)
+  }, [])
+
   return (
     <section className="campus-preview" id="campus">
       <div className="campus-inner">
@@ -40,7 +48,7 @@ export default function CampusPreview() {
 
         <div className="campus-stage" aria-label="Ro'ya University campus image preview">
           <div className="campus-feature">
-            <img src={selectedImage.src} alt={selectedImage.alt} />
+            <img key={selectedImage.src} src={selectedImage.src} alt={selectedImage.alt} />
             <div className="campus-feature-caption">
               <span>{String(selectedIndex + 1).padStart(2, '0')}</span>
               <strong>Campus Perspective</strong>

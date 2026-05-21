@@ -195,8 +195,12 @@
   transition: var(--transition);
 }
 
-.navbar-mobile a:hover {
+.navbar-mobile a:hover,
+.navbar-mobile a.navbar-mobile-cta {
   color: var(--gold-light);
+}
+
+.navbar-mobile a:hover {
   padding-left: 8px;
 }
 

@@ -68,6 +68,7 @@
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
+  animation: campusImageFade 0.7s var(--ease);
   transition: transform 0.7s var(--ease);
 }
 
@@ -152,6 +153,18 @@
 .campus-thumb:hover img,
 .campus-thumb.active img {
   filter: brightness(1) saturate(1.05);
+}
+
+@keyframes campusImageFade {
+  from {
+    opacity: 0.72;
+    transform: scale(1.018);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 1024px) {

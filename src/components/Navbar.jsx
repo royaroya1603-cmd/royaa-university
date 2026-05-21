@@ -5,6 +5,7 @@ import royaLogo from '../assets/roya-logo.png'
 const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Location', href: '#location' },
+  { label: 'Campus Preview', href: '#campus' },
   { label: 'Programs', href: '#programs' },
   { label: 'Collaboration', href: '#collaboration' },
   { label: 'Board', href: '#board' },
@@ -71,7 +72,7 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <a href={contactMailto} onClick={() => setMobileOpen(false)}>
+            <a className="navbar-mobile-cta" href={contactMailto} onClick={() => setMobileOpen(false)}>
               Contact Us Now
             </a>
           </li>
