@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Collaboration.css'
-import royaLogo from '../assets/roya-logo.jpg'
+import royaLogo from '../assets/roya-logo.png'
 import USMlogo from '../assets/USM_logo.png'
 import BSUlogo from '../assets/beni_suef_uni.png'
 

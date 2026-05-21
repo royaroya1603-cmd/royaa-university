@@ -164,12 +164,8 @@
 
 .thumb-logo-img {
   width: min(220px, 70%);
-  background: #fff;
-  border: 2px solid var(--gold-light);
-  border-radius: 4px;
-  padding: 8px;
   margin-bottom: 14px;
-  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.28);
+  filter: drop-shadow(0 16px 24px rgba(0, 0, 0, 0.34));
 }
 
 .thumb-sub {

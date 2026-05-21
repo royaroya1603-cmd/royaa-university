@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/Navbar.css'
-import royaLogo from '../assets/roya-logo.jpg'
+import royaLogo from '../assets/roya-logo.png'
 
 const navLinks = [
   { label: 'About', href: '#about' },
+  { label: 'Location', href: '#location' },
   { label: 'Programs', href: '#programs' },
   { label: 'Collaboration', href: '#collaboration' },
   { label: 'Board', href: '#board' },

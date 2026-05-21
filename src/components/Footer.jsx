@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Footer.css'
-import royaLogo from '../assets/roya-logo.jpg'
+import royaLogo from '../assets/roya-logo.png'
 
 const quickLinks = [
   { label: 'About the University', href: '#about' },

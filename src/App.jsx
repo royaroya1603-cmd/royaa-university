@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
+import LocationAdvantage from './components/LocationAdvantage'
+import CampusPreview from './components/CampusPreview'
 import Programs from './components/Programs'
 import Collaboration from './components/Collaboration'
 import FutureEducation from './components/FutureEducation'
@@ -16,6 +18,8 @@ function App() {
       <main>
         <Hero />
         <About />
+        <LocationAdvantage />
+        <CampusPreview />
         <Programs />
         <Collaboration />
         <FutureEducation />

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Hero.css'
-import royaLogo from '../assets/roya-logo.jpg'
+import royaLogo from '../assets/roya-logo.png'
 
 export default function Hero() {
   return (
@@ -24,7 +24,7 @@ export default function Hero() {
 
         <div className="hero-eyebrow">
           <span className="eyebrow-line" />
-          <span>Est. 2024 - Egypt - For Science & Technology</span>
+          <span>For Science & Technology</span>
         </div>
 
         <h1 className="hero-title">

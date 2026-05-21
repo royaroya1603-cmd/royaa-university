@@ -57,13 +57,11 @@
 .footer-logo-hex {
   width: 88px;
   height: 88px;
-  background: #fff;
-  border: 2px solid var(--gold-light);
-  border-radius: 4px;
-  padding: 5px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.28));
 }
 
 .footer-logo-hex img {
