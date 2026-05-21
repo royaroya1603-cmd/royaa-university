@@ -8,7 +8,7 @@ export const programs = [
   },
   {
     id: 2,
-    icon: 'AI',
+    icon: 'CSAI',
     title: 'Faculty of Computer Science & AI',
     description: 'Pioneering the digital frontier through advanced programs in artificial intelligence, machine learning, cybersecurity, and software engineering.',
     color: '#008c8c',
