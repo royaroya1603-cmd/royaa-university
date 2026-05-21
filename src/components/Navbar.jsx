@@ -73,7 +73,7 @@ export default function Navbar() {
           ))}
           <li>
             <a className="navbar-mobile-cta" href={contactMailto} onClick={() => setMobileOpen(false)}>
-              Contact Us Now
+              Inquire Now
             </a>
           </li>
         </ul>
