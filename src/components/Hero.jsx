@@ -1,11 +1,13 @@
 import React from 'react'
 import '../styles/Hero.css'
 import royaLogo from '../assets/roya-logo.png'
+import campus3 from '../assets/campus3.png'
 
 export default function Hero() {
   return (
     <section className="hero" id="hero">
       <div className="hero-bg">
+        <img className="hero-campus-image" src={campus3} alt="" aria-hidden="true" />
         <div className="hero-gradient" />
         <div className="hero-rays" />
         <div className="hero-pattern" />
@@ -28,9 +30,9 @@ export default function Hero() {
         </div>
 
         <h1 className="hero-title">
-          <span>Where Vision</span>
-          <span className="hero-title-accent">Shapes</span>
-          <span className="hero-title-gold">Tomorrow</span>
+          <span>Your Future</span>
+          <span className="hero-title-accent">Starts With</span>
+          <span className="hero-title-gold">Ro'ya</span>
         </h1>
 
         <p className="hero-subtitle">
